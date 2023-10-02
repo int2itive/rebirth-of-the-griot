@@ -1,28 +1,248 @@
-/* RESET RULES & HELPER CLASSES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@font-face {font-family: "BentonSans Black";
-  src:url("../../../assets/ff/benton-sans-sv/bentonsansblack/BentonSans Black.otf") format("opentype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-}
+@import url('https://api.fonts.coollabs.io/css2?family=Roboto&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+@import url('https://api.fonts.coollabs.io/css2?family=Roboto+Condensed&display=swap');
+
+@import url('https://api.fonts.coollabs.io/css2?family=Oswald&display=swap');
+
+
 
 :root {
-  --white: #fff;
-  --black: #221f1f;
-  --lightpurple: #9e91f2;
-  --rbg-main-text-clr: #b9661f;
+	--colorPrimaryDark: #0b132b;
+	--colorPrimaryLight: #494f61;
+	--colorPlaceholder: #9b9fa8;
+	--colorBackground: #eeeff0;
+	--colorBorder: #cdcfd3;
+	--colorAccent: #003bde;
+	--gutter: 0 16px;
+	--border: 1.5px solid var(--colorBorder);
+	--radius: 3px;
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+*, 
+*::before, 
+*::after {
   box-sizing: border-box;
 }
 
 /*
-* {
-  padding: 0;
-  margin: 0;
+body {
+    background: #000a2e;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 */
+
+body {
+    color: black;
+}
+
+.rbg-header {
+	position: fixed;
+    display: flex;
+	left: 0;
+    width: 100%;
+	padding: 4px 0;
+	background-color: transparent;
+	z-index: 100;
+	transition: all .6s;
+	transition: transform 500ms ease-out, -webkit-transform 500ms ease-out, background-color 500ms ease-out;
+}
+
+.headerDown {
+	top: 0;
+}
+
+.rbg-header::after {
+	content: '';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+.header-logo {
+	margin-left: 55px;
+	margin-right: 10px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.header-theme {
+	padding-left: 10px;
+}
+
+.header-theme h4 {
+	font-family: 'Segoe UI';
+	font-family: 'Oswald';  
+	font-size: 12px;
+	font-weight: 700;
+	color: #b9661f;
+  color: #dc7f2f;
+	margin-top: 1.8em;
+}
+
+.header-nav {
+	position: relative;
+    width: max-content;
+    padding-left: 1.25em;
+    margin-left: auto;
+	margin-top: 1.3em;
+    margin-right: 55px;
+	/*
+ float: left;
+  float: right;
+	list-style-type: none;
+	width: max-content;
+	padding-left: 1.25em;
+	margin-left: 100px;
+	margin: 1.2em 3.125em .9em 32.25em;
+ */
+}
+
+.header-nav li {
+	display: inline-block;
+	font-family: 'Segoe UI';
+  font-family: 'Oswald', sans-serif;
+	font-size: .85em;
+	font-weight: 700;
+  letter-spacing: 0.03rem;
+}
+
+.header-nav li a {
+	text-decoration: none;
+	color: #b9661f;
+	padding: 5px 10px;
+	transition: color .3s ease-in-out;
+}
+
+.header-nav li a.fromHere {
+	color: #fff;
+}
+
+.header-nav li a:not(.fromHere):hover {
+	color: #fd9402;
+	/* transition: .3s ease-in-out; */
+}
+
+.rbg-banner {
+	position: relative;
+	height: 300px;
+  height: 100vh;
+    height: 500px;
+	text-align: center;
+	color: #fff;
+	padding: 0 60px;
+	background: #000000 url('https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/c0v-members/tumblr_195698382fa906229ede8cec533791a4_7677d440_1280_LtiGFmkxk.jpg') 380px 70% / cover no-repeat;
+/* 	background: #000000 url('https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/c0v-members/paul-zoetemeijer-ek-BOf6s-JYYo-unsplash_1__FMvHm504j.jpg') 8px 10px / cover no-repeat;   */
+/* 	background-position: 380px 70%;
+	background-size: cover;
+	background-repeat: no-repeat; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.rbg-banner > * {
+	z-index: 10;
+}
+
+.rbg-banner .banner-title {
+	position: relative;
+	margin: 0;
+	padding: 140px 0 70px;
+	text-align: left;
+}
+
+.rbg-banner h2 {
+	font-family: 'raleway';
+  font-family:"work-sans";
+	font-weight: 800;
+	font-size: 3.5em;
+	color: #fafafa;
+	color: #b9661f;
+  color: #dc7f2f;
+  text-transform: uppercase;
+	margin: 0;
+	padding: calc(2.5em - 15px) 0 .5em;
+}
+
+.rbg-banner p {
+	font-family: 'Segoe UI';
+    font-family: 'Oswald';
+	font-size: 21px;
+  font-style: italic;
+	font-weight: 700;
+  width: 30ch;
+	color: #fd9402;
+	color: #b9661f;
+  color: #c0c0c0;
+  color: #fafafa;
+	/*text-transform: uppercase;*/
+	margin-top: 0;
+}
+
+.rbg-banner::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #202931, #292152);
+  background-color: rbga(0, 0, 0);
+	opacity: .65;
+  box-shadow: inset, rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+.text {
+  padding: 1.2em 3em;
+}
+
+.text--title {
+  display: flex;
+}
+
+.text h3 {
+  font-family:"work-sans";
+  font-size: 5.052rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: #c8c8c8;
+  color: #dc7f2f;
+	background: url("https://ik.imagekit.io/ghow2otb3rc/Projects/Current/AdobeStock_126287014_yuwZJFx7rK.jpeg")
+	bottom;
+	background: url("https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/c0v-members/AdobeStock_126287014_yuwZJFx7rK_1_-fotor-20231002172024_Sjg7Oruur.png")
+	bottom;    
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;  
+}
+
+.text h5 {
+  font-family: 'Oswald';
+  font-size: 1.953rem;
+  font-weight: 700;
+  align-self: flex-end;
+  transform: translate(-30%, -20%);
+}
+.text p {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-size: .875em;
+}
+
+/* The Following Code will undergo edit/deletion */
 
 body, html {
   height: 100%;
