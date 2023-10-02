@@ -213,7 +213,8 @@ img {
   display: flex;
 }
 
-.text h3 {
+.text h3, 
+section h3 {
   font-family:"work-sans";
   font-size: 5.052rem;
   font-weight: 900;
@@ -241,6 +242,13 @@ img {
   font-family: 'Oswald', sans-serif;
   font-size: .875em;
 }
+
+
+section h3 {
+  text-align: right;
+  font-size: 3rem;
+}
+
 
 /* The Following Code will undergo edit/deletion */
 
