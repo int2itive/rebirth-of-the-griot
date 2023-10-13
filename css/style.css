@@ -273,25 +273,62 @@ radial-gradient(at 6% 8%, hsla(343,23%,95%,1) 0px, transparent 50%);
 
 .text--title {
   display: flex;
+  flex-direction: colummn;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+/*   border: 1px solid black; */
 }
 
-.text h3, 
-section h3 {
+.text h3 {
   font-family:"work-sans";
-  font-size: 5.052rem;
+  font-size: calc(4vw + 2.5rem);
   font-weight: 900;
   text-transform: uppercase;
   line-height: 1.1;
   color: #c8c8c8;
   color: #dc7f2f;
-	background: url("https://ik.imagekit.io/ghow2otb3rc/Projects/Current/AdobeStock_126287014_yuwZJFx7rK.jpeg")
+  background: url("https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/c0v-members/AdobeStock_126287014_yuwZJFx7rK_1_-fotor-20231002172024_Sjg7Oruur.png")
 	bottom;
-	background: url("https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/c0v-members/AdobeStock_126287014_yuwZJFx7rK_1_-fotor-20231002172024_Sjg7Oruur.png")
-	bottom;    
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeAndDown 1s ease-in-out 0.5s 1 forwards;
 }
 
+
+.text h5 {
+  font-family: 'Oswald';
+  font-size: 1.953rem;
+  font-weight: 700;
+  color: var(--clr-rbg-main);
+  color: hsl(27.7,71.3%,55.7%);
+  align-self: flex-end;
+  transform: translate(25px, -40%);
+}
+
+.text p, 
+section p {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-size: .985em;
+  line-height: 1.4em;
+  margin-bottom: 1rem;
+/*   text-align: left; */
+}
+
+@media (min-width: 30rem) {
+  :where(section, .text, .parallax, .rbg--footer-wrap) {
+    padding: 1.2em 3em;
+  }
+  .text h3 {
+    font-size: 5.052rem;
+  }
+  .text h5 {
+      transform: translate(-6%, -20%);
+  }
+}
+
+
+/* 
 .text h5 {
   font-family: 'Oswald';
   font-size: 1.953rem;
@@ -304,7 +341,7 @@ section h3 {
   font-family: 'Oswald', sans-serif;
   font-size: .875em;
 }
-
+ */
 .rbg--anni-wrap {
   text-align: center;
   margin-bottom: 1rem;
