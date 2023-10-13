@@ -305,6 +305,15 @@ section h3 {
   font-size: .875em;
 }
 
+.rbg--anni-wrap {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.rbg--anni-wrap img {
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;  
+}
+
 
 section h3 {
   text-align: right;
@@ -313,14 +322,14 @@ section h3 {
 
 
 /* The Following Code will undergo edit/deletion */
-
+/* 
 body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
 }
-
+ */
 .page-header{  
   background-color: #383838;
   
