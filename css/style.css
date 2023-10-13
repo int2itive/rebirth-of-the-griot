@@ -511,7 +511,7 @@ nav::after {
   padding: 15px 40px 0;
 }
 
-.sub-caption p {
+/* .sub-caption p {
   color: var(--rbg-main-text-clr);
   font: 400 24px/1.2 "Lato", sans-serif;
   width: 35ch;
@@ -533,7 +533,7 @@ h3 {
   padding: 50px 80px;
   text-align: justify;
 }
-
+ */
 .social-mta {
   align-self: flex-end;
 }
