@@ -205,26 +205,43 @@ img {
   font-family:"work-sans";
 	font-weight: 800;
 	font-size: 3.5em;
+  font-size: calc(4.5vw + 1rem);
 	color: #fafafa;
 	color: #b9661f;
   color: #dc7f2f;
   text-transform: uppercase;
 	margin: 0;
+  margin-bottom: 2.5rem;
 	padding: calc(2.5em - 15px) 0 .5em;
+}
+/* 
+.banner-title h2 {
+  animation: openingSeq 1.5s ease-in-out .75s forwards;
+} */
+
+@media (min-width: 30rem) {
+  .rbg-banner {
+    background: #000000 url('https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/c0v-members/paul-zoetemeijer-ek-BOf6s-JYYo-unsplash_1__FMvHm504j.jpg') 0px 60% / cover no-repeat;
+    padding: 0 60px;
+  }
+  .banner-title h2 {
+    animation: openingSeq 1.5s ease-in-out .75s forwards;
+  }
 }
 
 .rbg-banner p {
-	font-family: 'Segoe UI';
-    font-family: 'Oswald';
+	font-family: 'Noto Sans';
 	font-size: 21px;
+  font-size: calc(.5vw + 1rem);
   font-style: italic;
-	font-weight: 700;
+	font-weight: 400;
+  line-height: 1.2;
   width: 30ch;
 	color: #fd9402;
 	color: #b9661f;
   color: #c0c0c0;
   color: #fafafa;
-	/*text-transform: uppercase;*/
+/* 	text-transform: uppercase; */
 	margin-top: 0;
 }
 
@@ -242,8 +259,19 @@ img {
 }
 
 
+:where(section, .text, .parallax, .rbg--footer-wrap) {
+  padding: 1.2em .5em;
+}
+
 .text {
-  padding: 1.2em 3em;
+  background-color:hsla(0,14%,94%,1);
+  background-image:
+radial-gradient(at 77% 88%, hsla(27,100%,84%,1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+radial-gradient(at 90% 24%, hsla(340,20%,88%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(22,20%,89%,1) 0px, transparent 50%),
+radial-gradient(at 6% 8%, hsla(343,23%,95%,1) 0px, transparent 50%);
+/*   border: 1px solid black; */
 }
 
 .text--title {
