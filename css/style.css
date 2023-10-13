@@ -42,28 +42,28 @@ h3 {
 
 .rbg-header {
   display: flex;
-	position: fixed;
+  position: fixed;
   align-items: center;
-	left: 0;
+  left: 0;
   right: 0;
-	padding: 8px 0;
-	background-color: transparent;
-	z-index: 100;
-	transition: all .6s;
-	transition: transform 500ms ease-out, -webkit-transform 500ms ease-out, background-color 500ms ease-out;
+  padding: 8px 0;
+  background-color: transparent;
+  z-index: 100;
+  transition: all .6s;
+  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out, background-color 500ms ease-out;
 /*   border: 1px solid #fff; */
 }
 
 .headerDown {
-	top: 0;
+  top: 0;
 }
 
 .rbg-header::after {
-	content: '';
-	display: block;
-	height: 0;
-	visibility: hidden;
-	clear: both;
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
 }
 
 .page-header {
@@ -77,11 +77,11 @@ h3 {
 }
 
 .rbg-header::after {
-	content: '';
-	display: block;
-	height: 0;
-	visibility: hidden;
-	clear: both;
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
 }
 
 .rbg-header.-hidden {
@@ -95,8 +95,8 @@ h3 {
 
 .header-logo {
   width: 40px;
-	margin-left: 15px;
-	margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 10px;
 }
 
 .header-logo img {
