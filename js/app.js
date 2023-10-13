@@ -1,55 +1,85 @@
-$(document).ready(function(){
 
-  // Populate images from data attributes.
-  var scrolled = $(window).scrollTop()
-  $('.parallax').each(function(index) {
-      var imageSrc = $(this).data('image-src')
-      var imageHeight = $(this).data('height')
-      $(this).css('background-image','url(' + imageSrc + ')')
-      $(this).css('height', imageHeight)
+//Scroll back to top
 
-      // Adjust the background position.
-      var initY = $(this).offset().top
-      var height = $(this).height()
-      var diff = scrolled - initY
-      var ratio = Math.round((diff / height) * 100)
-      $(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px')
-  })
+(function($) { "use strict";
 
-  // Attach scroll event to window. Calculate the scroll ratio of each element
-  // and change the image position with that ratio.
-  // https://codepen.io/lemagus/pen/RWxEYz
-  $(window).scroll(function() {
-    var scrolled = $(window).scrollTop()
-    $('.parallax').each(function(index, element) {
-      var initY = $(this).offset().top
-      var height = $(this).height()
-      var endY  = initY + $(this).height()
+	$(document).ready(function(){"use strict";
+		
+		var progressPath = document.querySelector('.progress-wrap path');
+		var pathLength = progressPath.getTotalLength();
+		progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+		progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+		progressPath.style.strokeDashoffset = pathLength;
+		progressPath.getBoundingClientRect();
+		progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';		
+		var updateProgress = function () {
+			var scroll = $(window).scrollTop();
+			var height = $(document).height() - $(window).height();
+			var progress = pathLength - (scroll * pathLength / height);
+			progressPath.style.strokeDashoffset = progress;
+		}
+		updateProgress();
+		$(window).scroll(updateProgress);	
+		var offset = 50;
+		var duration = 550;
+		jQuery(window).on('scroll', function() {
+			if (jQuery(this).scrollTop() > offset) {
+				jQuery('.progress-wrap').addClass('active-progress');
+			} else {
+				jQuery('.progress-wrap').removeClass('active-progress');
+			}
+		});				
+		jQuery('.progress-wrap').on('click', function(event) {
+			event.preventDefault();
+			jQuery('html, body').animate({scrollTop: 0}, duration);
+			return false;
+		})
+		
+		
+	});
+	
+})(jQuery); 
 
-      // Check if the element is in the viewport.
-      var visible = isInViewport(this)
-      if(visible) {
-        var diff = scrolled - initY
-        var ratio = Math.round((diff / height) * 100)
-        $(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px')
+const main = document.querySelector('.rbg-header');
+const icons = document.querySelectorAll('.icon');
+
+var hiddenState = "-hidden", nav_dark = "page-header";
+let ttlapps = 0;
+const apps = [], fullNameList = [], years_every = [];
+
+var threshold = 30, 
+      position = 0, 
+      lastScroll = 0, 
+      n_event = 0;
+
+window.addEventListener("scroll", function () {
+    var position = window.scrollY || document.documentElement.scrollTop;
+    
+    if (position > threshold && position > lastScroll) {
+      // console.log("Hello!!!");
+      main.classList.add(hiddenState);
+    } else {
+      main.classList.remove(hiddenState);
+      if (window.scrollY > 4) {
+        main.classList.add(nav_dark);
+      } else {
+        main.classList.remove(nav_dark);
       }
-    })
-  })
-})
+    }
 
-// Check if the element is in the viewport.
-// http://www.hnldesign.nl/work/code/check-if-element-is-visible/
-function isInViewport(node) {
-  // Am I visible? Height and Width are not explicitly necessary in visibility
-  // detection, the bottom, right, top and left are the essential checks. If an
-  // image is 0x0, it is technically not visible, so it should not be marked as
-  // such. That is why either width or height have to be > 0.
-  var rect = node.getBoundingClientRect()
-  return (
-    (rect.height > 0 || rect.width > 0) &&
-    rect.bottom >= 0 &&
-    rect.right >= 0 &&
-    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.left <= (window.innerWidth || document.documentElement.clientWidth)
-  )
-}
+    lastScroll = position <= 0 ? 0 : position;
+
+  });
+
+
+icons.forEach (icon => {  
+  icon.addEventListener('click', (event) => {
+    icon.classList.toggle("open");
+  });
+});
+
+const p = document.querySelector('.rbg--griot-text p:first-child');
+
+let val = getComputedStyle(p, 'font-size');
+
+// console.log(val);
