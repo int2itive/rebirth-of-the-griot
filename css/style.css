@@ -121,21 +121,19 @@ img {
 }
 
 .header-theme h4 {
-	font-family: 'Segoe UI';
-	font-family: 'Oswald';  
-	font-size: 12px;
-	font-weight: 700;
-	color: #b9661f;
-  color: #dc7f2f;
-	margin-top: 1.8em;
+  font-family: 'Segoe UI';
+  font-family: 'Oswald';  
+  font-size: 12px;
+  font-weight: 700;
+  color: #b9661f;
+  color: #dc7f2f;=
 }
 
 .header-nav {
-	position: relative;
+  position: relative;
   width: max-content;
   padding-left: 1.25em;
   margin-left: auto;
-	margin-top: 1.3em;
   margin-right: 50px;
 	/*
  float: left;
