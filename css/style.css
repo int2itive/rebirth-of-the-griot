@@ -6,15 +6,16 @@
 
 @import url('https://api.fonts.coollabs.io/css2?family=Oswald&display=swap');
 
-
+@import url('https://api.fonts.coollabs.io/css2?family=Noto+Sans&display=swap');
 
 :root {
-	--colorPrimaryDark: #0b132b;
-	--colorPrimaryLight: #494f61;
-	--colorPlaceholder: #9b9fa8;
-	--colorBackground: #eeeff0;
-	--colorBorder: #cdcfd3;
-	--colorAccent: #003bde;
+	--colorPrimaryDark: hsl(225,59.3%,10.6%);
+	--colorPrimaryLight: hsl(225,14.1%,33.3%);
+	--colorPlaceholder: hsl(221.5,7%,63.3%);
+  	--clr-rbg-main: hsl(27.7,71.3%,42.4%);
+	--colorBackground: hsl(210,6.2%,93.7%);
+	--colorBorder: hsl(220,6.4%,81.6%);
+	--colorAccent: hsl(224.1,100%,43.5%);
 	--gutter: 0 16px;
 	--border: 1.5px solid var(--colorBorder);
 	--radius: 3px;
@@ -50,11 +51,20 @@ h3 {
   z-index: 100;
   transition: all .6s;
   transition: transform 500ms ease-out, -webkit-transform 500ms ease-out, background-color 500ms ease-out;
-/*   border: 1px solid #fff; */
 }
 
 .headerDown {
   top: 0;
+}
+
+.page-header {
+  background-color: #00020e;
+  background-color: rgba(0, 2, 14, .95);
+  border-bottom: 2px solid #b9661f;
+  -webkit-transition: -webkit-transform 500ms ease-out;
+  /* transition: -webkit-transform 500ms ease-out; */
+  /* transition: transform 500ms ease-out; */
+  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
 }
 
 .rbg-header::after {
@@ -63,18 +73,6 @@ h3 {
   height: 0;
   visibility: hidden;
   clear: both;
-}
-
-.page-header {
-  background-color: #00020e;
-  background-color: rgba(0, 2, 14, .95);
-  background-color: hsla(231, 100%, 3%, 0.95);
-  background-color: hsla(231, 100%, 3%, 0.90);
-  border-bottom: 2px solid #b9661f;
-  -webkit-transition: -webkit-transform 500ms ease-out;
-  /* transition: -webkit-transform 500ms ease-out; */
-  /* transition: transform 500ms ease-out; */
-  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
 }
 
 .rbg-header::after {
@@ -110,6 +108,10 @@ h3 {
       width: 55px;
     	margin-left: 50px;
   }
+}
+
+#page, img {
+	vertical-align: top;
 }
 
 img {
