@@ -8,6 +8,8 @@
 
 @import url('https://api.fonts.coollabs.io/css2?family=Noto+Sans&display=swap');
 
+@import url('https://api.fonts.coollabs.io/css2?family=Work+Sans&display=swap');
+
 :root {
 	--colorPrimaryDark: hsl(225,59.3%,10.6%);
 	--colorPrimaryLight: hsl(225,14.1%,33.3%);
@@ -54,7 +56,7 @@ h3 {
 }
 
 .headerDown {
-  top: 0;
+	top: 0;
 }
 
 .page-header {
@@ -65,14 +67,6 @@ h3 {
   /* transition: -webkit-transform 500ms ease-out; */
   /* transition: transform 500ms ease-out; */
   transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
-}
-
-.rbg-header::after {
-  content: '';
-  display: block;
-  height: 0;
-  visibility: hidden;
-  clear: both;
 }
 
 .rbg-header::after {
