@@ -1,4 +1,4 @@
-@import url('https://api.fonts.coollabs.io/css2?family=Roboto&display=swap');
+/* @import url('https://api.fonts.coollabs.io/css2?family=Roboto&display=swap'); */
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 
@@ -84,8 +84,9 @@ h3 {
 .page-header {
   background-color: #00020e;
   background-color: hsla(240, 85%, 18%, 0.82);
+  background-color: hsla(240, 85%, 22%, 0.95);
   border-bottom: 2px solid #b9661f;
-  border-bottom: 2px solid hsla(240, 85%, 22%, 0.95);
+/*   border-bottom: 2px solid hsla(240, 85%, 22%, 0.95); */
   -webkit-transition: -webkit-transform 500ms ease-out;
   /* transition: -webkit-transform 500ms ease-out; */
   /* transition: transform 500ms ease-out; */
