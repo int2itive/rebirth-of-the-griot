@@ -19,24 +19,22 @@ ready(() => {
         n_event = 0;
   
   window.addEventListener("scroll", function () {
-      var position = window.scrollY || document.documentElement.scrollTop;
-      
-      if (position > threshold && position > lastScroll) {
-        // console.log("Hello!!!");
-        main.classList.add(hiddenState);
+    var position = window.scrollY || document.documentElement.scrollTop;
+    
+    if (position > threshold && position > lastScroll) {
+      main.classList.add(hiddenState);
+    } else {
+      main.classList.remove(hiddenState);
+      if (window.scrollY > 40) {
+        main.classList.add(nav_dark);
       } else {
-        main.classList.remove(hiddenState);
-        if (window.scrollY > 40) {
-          main.classList.add(nav_dark);
-        } else {
-          main.classList.remove(nav_dark);
-        }
+        main.classList.remove(nav_dark);
       }
-  
-      lastScroll = position <= 0 ? 0 : position;
-  
-    });
-  
+    }
+
+    lastScroll = position <= 0 ? 0 : position;
+
+  });
   
   icons.forEach (icon => {  
     icon.addEventListener('click', (event) => {
