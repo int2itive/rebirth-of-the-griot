@@ -26,7 +26,7 @@ ready(() => {
         main.classList.add(hiddenState);
       } else {
         main.classList.remove(hiddenState);
-        if (window.scrollY > 4) {
+        if (window.scrollY > 40) {
           main.classList.add(nav_dark);
         } else {
           main.classList.remove(nav_dark);
