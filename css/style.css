@@ -54,16 +54,16 @@ h3 {
 	transition: transform 500ms ease-out, -webkit-transform 500ms ease-out, background-color 500ms ease-out;
 /*   border: 1px solid #fff; */
 }
-
+/* 
 .page-header {
   background-color: #00020e;
   background-color: rgba(0, 2, 14, .95);
   border-bottom: 2px solid #b9661f;
   -webkit-transition: -webkit-transform 500ms ease-out;
-  /* transition: -webkit-transform 500ms ease-out; */
-  /* transition: transform 500ms ease-out; */
+  transition: -webkit-transform 500ms ease-out;
+  transition: transform 500ms ease-out;
   transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
-}
+} */
 
 .rbg-header::after {
 	content: '';
