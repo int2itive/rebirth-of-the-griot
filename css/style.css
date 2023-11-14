@@ -49,6 +49,7 @@ h3 {
   right: 0;
 	padding: 8px 0;
 	background-color: transparent;
+	background-color: #fff;
 	z-index: 100;
 	transition: all .6s;
 	transition: transform 500ms ease-out, -webkit-transform 500ms ease-out, background-color 500ms ease-out;
