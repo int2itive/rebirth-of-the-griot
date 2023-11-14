@@ -85,7 +85,7 @@ h3 {
   background-color: #00020e;
   background-color: hsla(240, 85%, 18%, 0.82);
   border-bottom: 2px solid #b9661f;
-  border-bottom: 2px solid #c0c0c0;
+  border-bottom: 2px solid firebrick;
   -webkit-transition: -webkit-transform 500ms ease-out;
   /* transition: -webkit-transform 500ms ease-out; */
   /* transition: transform 500ms ease-out; */
