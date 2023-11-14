@@ -519,6 +519,10 @@ section h3 {
 /*   border: 1px solid #c0c0c0; */
 }
 
+.speech--mark {
+  display: none;
+}
+
 .rbg--griot-text p:nth-child(2) {
   position: relative;
   width: 16.75rem;
