@@ -375,6 +375,117 @@ section h3 {
   font-size: 3rem;
 }
 
+#parallax-1 {
+  position: relative;
+/*   background-color: #c0c0c0; */
+/*   background: #c0c0c0 url('https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/media/jsm-sldr-cr0pd-bgnew01_63UoC7w48_IohiQ2VOS.png') center center / cover no-repeat;
+  background-color: linear-gradient(to right, #530638, #4001a6); */
+  color: hsl(0,0%,95.3%);
+  background-image:  url('https://ik.imagekit.io/ghow2otb3rc/rebirthofthegriot/c0v-members/hatim-belyamani-RGi5-GDdhbh-M-c01_jQLjpLjZ7.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1665403004510');
+  background-position: center 45%;
+  background-size: cover;
+  background-repeat: no-repeat;  
+}
+
+#parallax-1 > * {
+  position: relative;
+  z-index: 5;
+}
+
+#parallax-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(225,59.3%,17.3%, .8);
+}
+
+.rbg--griot-wrap {
+  text-align: right;
+/*   border: 1px solid #c0c0c0; */
+}
+
+.rbg--griot-wrap h2 {
+  font-family:"work-sans";
+  font-weight: 800;
+  font-size: 3.052rem;
+  line-height: .75;
+  text-transform: uppercase;  
+  color: #dc7f2f;
+  margin-bottom: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.rbg--griot-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+/*   width: 100%; */
+/*   border: 1px solid #c0c0c0; */
+  align-items: flex-end;
+/*   justify-content: flex-start; */
+}
+
+.rbg--griot-text p {
+  width: 25rem;
+  width: 22rem;
+/*   width: 18rem; */
+/*   flex: 0 0 40rem; */
+/*   border: 1px solid #c0c0c0; */
+}
+
+.rbg--griot-text p:nth-child(2) {
+  position: relative;
+  width: 16.75rem;
+  align-self: flex-start;
+  align-self: center;
+  font-size: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: hsl(232.7,82.4%,92.2%);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.rbg--griot-text p:nth-child(2)::before {
+  position: absolute;
+  content: "\201C";
+  left: -10px;
+  top: -25px;
+  font-size: 96px;
+  opacity: .2;
+/*   rotate: 180deg; */
+}
+
+.rbg--griot-text p:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  right: -10px;
+  background-color: hsl(232.7,82.4%,92.2%);
+}
+/* 
+@media (min-width: 48rem) {
+  .rbg--griot-text p {
+    width: 20rem;
+  }  
+}
+ */
+
+@media (min-width: 30rem) {
+  .rbg--griot-text p {
+    width: 40rem;
+  }
+/*   .rbg--griot-text p:nth-child(2) {
+    font-size: 1.5rem;
+    width: 15rem;
+    align-self: flex-center;
+  } */
+}
+
 
 /* The Following Code will undergo edit/deletion */
 /* 
