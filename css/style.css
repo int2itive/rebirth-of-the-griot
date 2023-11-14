@@ -544,7 +544,11 @@ section h3 {
 
 @media (min-width: 30rem) {
   .rbg--griot-text p {
-    width: 40rem;
+    width: 29rem;
+  }
+  .rbg--griot-text p:nth-child(2) {
+    width: 44.75rem;
+    font-size: 1.9rem;
   }
 /*   .rbg--griot-text p:nth-child(2) {
     font-size: 1.5rem;
