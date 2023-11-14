@@ -9,7 +9,7 @@ ready(() => {
   const main = document.querySelector('.rbg-header');
   const icons = document.querySelectorAll('.icon');
   
-  var hiddenState = "-hidden", nav_dark = "page-header";
+  let hiddenState = "-hidden", nav_dark = "page-header";
   let ttlapps = 0;
   const apps = [], fullNameList = [], years_every = [];
   
