@@ -571,7 +571,7 @@ section h3 {
     margin: 1.5rem 0 2.5rem;
   }
   .rbg--griot-text p:nth-child(2)::before {
-    left: 1.25rem;
+/*     left: 1.25rem; */
     top: -25px;
   /*   rotate: 180deg; */
   }	
