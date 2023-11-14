@@ -471,7 +471,7 @@ section h3 {
 
 .rbg--griot-wrap {
   text-align: right;
-/*   border: 1px solid #c0c0c0; */
+  border: 1px solid #c0c0c0;
 }
 
 .rbg--griot-wrap h2 {
