@@ -613,6 +613,23 @@ section h3 {
   } */
 }
 
+.sponsor--gallery {
+  position: relative;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 12px;
+  margin-bottom: 4rem;
+}
+
+.sponsor--image {
+/*   border: 1px solid hsl(0,0%,82%); */
+  border-radius: 6px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; 
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
 
 /* The Following Code will undergo edit/deletion */
 /* 
