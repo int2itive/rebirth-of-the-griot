@@ -508,8 +508,10 @@ section h3 {
 }
 
 .rbg--griot-text p {
+  position: relative;
   width: 25rem;
   width: 22rem;
+  text-align: right;	
   letter-spacing: .025rem;	
 /*   width: 18rem; */
 /*   flex: 0 0 40rem; */
