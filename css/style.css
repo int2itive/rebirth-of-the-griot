@@ -485,7 +485,6 @@ section h3 {
 
 .rbg--griot-wrap {
   text-align: right;
-  text-align: left;
 /*   border: 1px solid #c0c0c0; */
 }
 
@@ -493,6 +492,7 @@ section h3 {
   font-family:"work-sans";
   font-weight: 800;
   font-size: 3.052rem;
+  text-align: left;
   line-height: .75;
   text-transform: uppercase;  
   color: #dc7f2f;
