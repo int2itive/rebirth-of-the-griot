@@ -480,11 +480,11 @@ section h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: hsla(225,59.3%,17.3%, .8);
+  background-color: hsla(225,59.3%,17.3%, .9);
 }
 
 .rbg--griot-wrap {
-  text-align: right;
+  position: relative;
 /*   border: 1px solid #c0c0c0; */
 }
 
@@ -492,7 +492,6 @@ section h3 {
   font-family:"work-sans";
   font-weight: 800;
   font-size: 3.052rem;
-  text-align: left;
   line-height: .75;
   text-transform: uppercase;  
   color: #dc7f2f;
@@ -504,8 +503,6 @@ section h3 {
   display: flex;
   flex-direction: column;
   position: relative;
-/*   width: 100%; */
-/*   border: 1px solid #c0c0c0; */
   align-items: flex-end;
 /*   justify-content: flex-start; */
 }
@@ -517,6 +514,27 @@ section h3 {
 /*   width: 18rem; */
 /*   flex: 0 0 40rem; */
 /*   border: 1px solid #c0c0c0; */
+}
+
+.rbg--griot-text p:nth-child(1)::before {
+  --shadow-color: hsl(0deg 0% 0% / 0.5);
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: -7px;
+  height: 1.2rem;
+  width: 1.1rem;
+  background-color: transparent;
+  border-left: 5px solid #dc7f2f;
+  border-top: 5px solid #dc7f2f;
+/*   box-shadow:
+    0 1px 1px rgba(250, 250, 250, 0.075),
+    0 2px 2px rgba(250, 250, 250, 0.075),
+    0 4px 4px rgba(250, 250, 250, 0.075),
+    0 8px 8px rgba(250, 250, 250, 0.075),
+    0 16px 16px rgba(250, 250, 250, 0.075)
+    ;
+ */
 }
 
 .rbg--griot-text p:nth-child(2) {
@@ -553,6 +571,19 @@ section h3 {
   right: -10px;
   background-color: hsl(232.7,82.4%,92.2%);
 }
+
+.rbg--griot-text p:nth-child(4)::before {
+  content: '';
+  position: absolute;
+  right: -12px;
+  bottom: -7px;
+  height: 1.2rem;
+  width: 1.1rem;
+  background-color: transparent;
+  border-right: 5px solid #dc7f2f;
+  border-bottom: 5px solid #dc7f2f;
+}
+
 /* 
 @media (min-width: 48rem) {
   .rbg--griot-text p {
