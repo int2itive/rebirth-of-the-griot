@@ -522,7 +522,7 @@ section h3 {
   --shadow-color: hsl(0deg 0% 0% / 0.5);
   content: '';
   position: absolute;
-  left: -10px;
+  left: -2px;
   top: -7px;
   height: 1.2rem;
   width: 1.1rem;
@@ -557,7 +557,7 @@ section h3 {
   position: absolute;
   content: "\201C";
   left: -20px;
-  left: -10;
+  left: -1px;
   top: -25px;
   font-size: 96px;
   opacity: .2;
